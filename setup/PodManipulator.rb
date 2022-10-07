@@ -45,7 +45,7 @@ module Pod
 
       # rename Doc file
       doc_path = project_folder + "/PROJECT/PROJECT.docc/"
-      File.rename(doc_path + "PROJECT.md", project_folder +  @configurator.pod_name + ".md")
+      File.rename(doc_path + "PROJECT.md", doc_path +  @configurator.pod_name + ".md")
 
       # rename header file
       File.rename(project_folder + "/PROJECT/PROJECT.h", project_folder + "/PROJECT/" +  @configurator.pod_name + ".h")
